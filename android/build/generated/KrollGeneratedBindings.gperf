@@ -1,0 +1,16 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name TismsBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "ti.miga.sms.receive.TismsModule.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+ti.miga.sms.receive.TismsModule, ::ti::miga::sms::receive::TismsModule::bindProxy, ::ti::miga::sms::receive::TismsModule::dispose
+%%
