@@ -8,3 +8,6 @@ Ti.App.addEventListener("received",function(e){
 	alert(e.number + " " + e.message);
 });
 ```
+
+Can receive normal and binary sms (Port 8080)
+Use https://github.com/omorandi/TiAndroidSMS by Olivier Morandi to send sms
