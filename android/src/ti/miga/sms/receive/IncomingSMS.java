@@ -11,7 +11,7 @@ import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.titanium.TiApplication;
 
 public class IncomingSMS extends BroadcastReceiver {
-// Get the object of SmsManager
+    // Get the object of SmsManager
     final SmsManager sms = SmsManager.getDefault();
 
     public void onReceive(Context context, Intent intent) {
@@ -21,39 +21,52 @@ public class IncomingSMS extends BroadcastReceiver {
 
             if (bundle != null) {
 
-                final Object[] pdusObj = (Object[]) bundle.get("pdus");
+                if (intent.getAction().equals("android.intent.action.DATA_SMS_RECEIVED")) {
+                    // binary sms
+                    //
 
-                for (int i = 0; i < pdusObj.length; i++) {
+                    Object messages[] = (Object[]) bundle.get("pdus");
+                    SmsMessage smsMessage[] = new SmsMessage[messages.length];
 
-                    SmsMessage currentMessage = SmsMessage.createFromPdu((byte[]) pdusObj[i]);
-                    String phoneNumber = currentMessage.getDisplayOriginatingAddress();
+                    for (int n = 0; n < messages.length; n++)
+                        smsMessage[n] = SmsMessage.createFromPdu((byte[]) messages[n]);
 
-                    String senderNum = phoneNumber;
-                    String message = currentMessage.getDisplayMessageBody();
+                    byte[] data = smsMessage[0].getUserData();
+                    String phoneNumber = smsMessage[0].getDisplayOriginatingAddress();
+                    String str = new String(data);
+                    Log.i("SmsReceiver", "binary sms : senderNum: " + phoneNumber + "; message: " + str);
 
-                    Log.i("SmsReceiver", "senderNum: "+ senderNum + "; message: " + message);
-
-                	if(TiApplication.getInstance()!=null){
+                    if (TiApplication.getInstance() != null) {
                         KrollDict props = new KrollDict();
-                        props.put("message", message);
-                        props.put("number", senderNum);
-                        //fires the change event
+                        props.put("message", str);
+                        props.put("number", phoneNumber);
                         TiApplication.getInstance().fireAppEvent("received", props);
-                        //TiApplication.getInstance().fireAppEvent(BOOT_TYPE, event);
                     }
 
+                } else {
+                    // normal sms
+                    //
+                    final Object[] pdusObj = (Object[]) bundle.get("pdus");
 
-                   /*
-                    int duration = Toast.LENGTH_LONG;
-                    Toast toast = Toast.makeText(context,
-                                 "senderNum: "+ senderNum + ", message: " + message, duration);
-                    toast.show();
-                    */
-                } // end for loop
-              } // bundle is null
+                    for (int i = 0; i < pdusObj.length; i++) {
 
+                        SmsMessage currentMessage = SmsMessage.createFromPdu((byte[]) pdusObj[i]);
+                        String phoneNumber = currentMessage.getDisplayOriginatingAddress();
+                        String message = currentMessage.getDisplayMessageBody();
+
+                        Log.i("SmsReceiver", "senderNum: " + phoneNumber + "; message: " + message);
+
+                        if (TiApplication.getInstance() != null) {
+                            KrollDict props = new KrollDict();
+                            props.put("message", message);
+                            props.put("number", phoneNumber);
+                            TiApplication.getInstance().fireAppEvent("received", props);
+                        }
+                    } // end for loop
+                } // bundle is null
+            }
         } catch (Exception e) {
-            Log.e("SmsReceiver", "Exception smsReceiver" +e);
+            Log.e("SmsReceiver", "Exception smsReceiver" + e);
 
         }
     }
