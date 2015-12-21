@@ -48,21 +48,24 @@ public class IncomingSMS extends BroadcastReceiver {
                     //
                     final Object[] pdusObj = (Object[]) bundle.get("pdus");
 
+                    String phoneNumber="";
+                    String message="";
+
                     for (int i = 0; i < pdusObj.length; i++) {
 
                         SmsMessage currentMessage = SmsMessage.createFromPdu((byte[]) pdusObj[i]);
-                        String phoneNumber = currentMessage.getDisplayOriginatingAddress();
-                        String message = currentMessage.getDisplayMessageBody();
+                        phoneNumber = currentMessage.getDisplayOriginatingAddress();
+                        message += currentMessage.getDisplayMessageBody();
 
                         Log.i("SmsReceiver", "senderNum: " + phoneNumber + "; message: " + message);
-
-                        if (TiApplication.getInstance() != null) {
-                            KrollDict props = new KrollDict();
-                            props.put("message", message);
-                            props.put("number", phoneNumber);
-                            TiApplication.getInstance().fireAppEvent("received", props);
-                        }
                     } // end for loop
+
+                    if (TiApplication.getInstance() != null) {
+                        KrollDict props = new KrollDict();
+                        props.put("message", message);
+                        props.put("number", phoneNumber);
+                        TiApplication.getInstance().fireAppEvent("received", props);
+                    }
                 } // bundle is null
             }
         } catch (Exception e) {

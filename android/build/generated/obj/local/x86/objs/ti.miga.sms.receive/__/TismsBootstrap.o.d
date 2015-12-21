@@ -15,8 +15,8 @@
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h \
- /home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/v8.h \
- /home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/v8stdint.h \
+ /home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/v8.h \
+ /home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/v8stdint.h \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stddef.h \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stdio.h \
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/../include/stdio.h \
@@ -35,7 +35,7 @@
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/linux/types.h \
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/machine/kernel.h \
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h \
- /home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/AndroidUtil.h \
+ /home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/AndroidUtil.h \
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/android/log.h \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stdlib.h \
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/../include/stdlib.h \
@@ -45,7 +45,7 @@
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/alloca.h \
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/strings.h \
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/memory.h \
- /home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/KrollBindings.h \
+ /home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/KrollBindings.h \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/map \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/_prolog.h \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/debug/_debug.h \
@@ -155,15 +155,15 @@
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/_vector.h \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/_vector.c \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/_bvector.h \
- /home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/V8Util.h \
+ /home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/V8Util.h \
  jni/../BootstrapJS.cpp jni/../KrollGeneratedBindings.cpp \
  jni/ti.miga.sms.receive.TismsModule.h \
- /home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/Proxy.h \
- /home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/JavaObject.h \
+ /home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/Proxy.h \
+ /home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/JavaObject.h \
  /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/assert.h \
  /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/../include/assert.h \
- /home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/EventEmitter.h \
- /home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/NativeObject.h
+ /home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/EventEmitter.h \
+ /home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/NativeObject.h
 
 /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/jni.h:
 
@@ -195,9 +195,9 @@
 
 /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h:
 
-/home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/v8.h:
+/home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/v8.h:
 
-/home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/v8stdint.h:
+/home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/v8stdint.h:
 
 /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stddef.h:
 
@@ -235,7 +235,7 @@
 
 /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/sys/sysmacros.h:
 
-/home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/AndroidUtil.h:
+/home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/AndroidUtil.h:
 
 /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/android/log.h:
 
@@ -255,7 +255,7 @@
 
 /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/memory.h:
 
-/home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/KrollBindings.h:
+/home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/KrollBindings.h:
 
 /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/map:
 
@@ -475,7 +475,7 @@
 
 /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/stl/_bvector.h:
 
-/home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/V8Util.h:
+/home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/V8Util.h:
 
 jni/../BootstrapJS.cpp:
 
@@ -483,14 +483,14 @@ jni/../KrollGeneratedBindings.cpp:
 
 jni/ti.miga.sms.receive.TismsModule.h:
 
-/home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/Proxy.h:
+/home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/Proxy.h:
 
-/home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/JavaObject.h:
+/home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/JavaObject.h:
 
 /home/miga/tools/android-ndk/sources/cxx-stl/stlport/stlport/assert.h:
 
 /home/miga/tools/android-ndk/platforms/android-9/arch-x86/usr/include/../include/assert.h:
 
-/home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/EventEmitter.h:
+/home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/EventEmitter.h:
 
-/home/miga/.titanium/mobilesdk/linux/3.3.0.RC/android/native/include/NativeObject.h:
+/home/miga/.titanium/mobilesdk/linux/5.1.1.GA/android/native/include/NativeObject.h:
