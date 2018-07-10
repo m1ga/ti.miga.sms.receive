@@ -2,9 +2,8 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 2.0.0
-apiversion: 4
-architectures: arm64-v8a armeabi-v7a x86
+version: 1.2.0
+apiversion: 3
 description: Receive SMS on Android
 author: Michael Gangolf
 license: Apache 2
@@ -15,4 +14,5 @@ name: tisms
 moduleid: ti.miga.sms.receive
 guid: 0738c1da-339d-479c-9f72-a95c1eec9bf9
 platform: android
-minsdk: 7.2.0
+minsdk: 6.0.0.GA
+architectures: armeabi-v7a x86
